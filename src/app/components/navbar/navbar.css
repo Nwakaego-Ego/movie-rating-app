@@ -1,0 +1,28 @@
+.home-rated {
+  /* background-color: rgb(217, 217, 231); */
+  position: relative;
+  top: 20px;
+  padding: 10px;
+}
+
+.rated {
+  /* color: red; */
+  position: relative;
+  left: 5px;
+  padding: 5px;
+  border-right: 2px solid rgb(218, 209, 209);
+}
+
+.home {
+  padding: 5px;
+  border-right: 2px solid rgb(218, 209, 209);
+  border-left: 2px solid rgb(218, 209, 209);
+  /* border: 1px solid rgb(218, 209, 209); */
+}
+
+.auth {
+  padding: 5px;
+  border-right: 2px solid rgb(218, 209, 209);
+  border-left: 2px solid rgb(218, 209, 209);
+  margin-right: 10px;
+}
