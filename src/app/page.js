@@ -1,10 +1,18 @@
+"use client";
 import Dashboard from "../app/components/dashboard/dashboard";
 import "semantic-ui-css/semantic.min.css";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
 
 export default function Home() {
+  const queryClient = new QueryClient();
+
   return (
-    <main className="">
+    <QueryClientProvider client={queryClient}>
       <Dashboard />
-    </main>
+    </QueryClientProvider>
   );
 }
