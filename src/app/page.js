@@ -1,5 +1,5 @@
 "use client";
-import Dashboard from "../app/components/dashboard/dashboard";
+import Home from "./components/home/home";
 import "semantic-ui-css/semantic.min.css";
 import {
   QueryClient,
@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Dashboard />
+      <Home />
     </QueryClientProvider>
   );
 }
