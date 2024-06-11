@@ -1,3 +1,4 @@
+"use client";
 import axios from "axios";
 // import { baseURL } from "@/app/constants";
 import { baseURL } from "../../../constants";
@@ -10,6 +11,7 @@ export const createGuestSession = async () => {
     },
   });
 
-  console.log(process.env.NEXT_PUBLIC_API_KEY);
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  console.log("API Key:", apiKey);
   return res.data;
 };

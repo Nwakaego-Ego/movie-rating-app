@@ -14,6 +14,11 @@ export default function page() {
             Login
           </button>
         </div>
+        <div>
+          <button className="style-button" onClick={login}>
+            Login
+          </button>
+        </div>
       </div>
     </>
   );
