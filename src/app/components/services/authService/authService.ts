@@ -12,6 +12,6 @@ export const createGuestSession = async () => {
   });
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
-  console.log("API Key:", apiKey);
+  // console.log("API Key:", apiKey);
   return res.data;
 };
