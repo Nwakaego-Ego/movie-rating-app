@@ -100,6 +100,7 @@ export default function Dashboard() {
     data: movieData,
     isLoading: isMovieLoading,
     error: movieError,
+    refetch: refetchMovies,
   } = useQuery({
     queryKey: ["popularMovies"],
     queryFn: popularMovies,
@@ -113,9 +114,10 @@ export default function Dashboard() {
         "Guest session ID stored in session storage:",
         guestData.guest_session_id
       );
+      refetchMovies();
     }
     console.log(guestData);
-  }, [guestData]);
+  }, [guestData, refetchMovies]);
 
   const guestSession = async () => {
     const fetchedData = await createGuestSession();
